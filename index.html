@@ -14,43 +14,43 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="row nav__row">
-        <figure class="nav__logo">
-          <a href="#" class="nav__icon">T</a>
-          <a href="#" class="nav__name">Treact</a>
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link-list-item">
-            <a href="" class="nav__link">About</a>
-            <div class="nav__link-hover-effect"></div>
-          </li>
-          <li class="nav__link-list-item">
-            <a href="" class="nav__link">Blog</a>
-            <div class="nav__link-hover-effect"></div>
-          </li>
-          <li class="nav__link-list-item">
-            <a href="" class="nav__link">Pricing</a>
-            <div class="nav__link-hover-effect"></div>
-          </li>
-          <li class="nav__link-list-item">
-            <a href="" class="nav__link">Contact Us</a>
-            <div class="nav__link-hover-effect"></div>
-          </li>
-          <div class="login__link">
-            <li class="nav__link-list-item">
-              <a href="" class="nav__link">Login</a>
-              <div class="nav__link-hover-effect"></div>
-            </li>
-            <li class="nav__link-list-item">
-              <a href="" class="nav__link--primary">Sign Up</a>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </nav>
     <main>
       <section id="landing">
+        <nav>
+          <div class="row nav__row">
+            <figure class="nav__logo">
+              <a href="#" class="nav__icon">T</a>
+              <a href="#" class="nav__name">Treact</a>
+            </figure>
+            <ul class="nav__link--list">
+              <li class="nav__link-list-item">
+                <a href="" class="nav__link">About</a>
+                <div class="nav__link-hover-effect"></div>
+              </li>
+              <li class="nav__link-list-item">
+                <a href="" class="nav__link">Blog</a>
+                <div class="nav__link-hover-effect"></div>
+              </li>
+              <li class="nav__link-list-item">
+                <a href="" class="nav__link">Pricing</a>
+                <div class="nav__link-hover-effect"></div>
+              </li>
+              <li class="nav__link-list-item">
+                <a href="" class="nav__link">Contact Us</a>
+                <div class="nav__link-hover-effect"></div>
+              </li>
+              <div class="login__link">
+                <li class="nav__link-list-item">
+                  <a href="" class="nav__link">Login</a>
+                  <div class="nav__link-hover-effect"></div>
+                </li>
+                <li class="nav__link-list-item">
+                  <a href="" class="nav__link--primary">Sign Up</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </nav>
         <div class="row landing__row">
           <div class="container landing__container">
             <div class="landing__organizer">
@@ -58,7 +58,7 @@
                 Beautiful React Temmplates
                 <span class="text__purple">For You.</span>
               </h2>
-              <p class="landing text">
+              <p class="landing__text text">
                 Our templates are easy to setup, understand and customize. Fully
                 modular components with a variety of pages and components.
               </p>
@@ -70,14 +70,42 @@
                 />
                 <button class="email__button">Get started</button>
               </form>
+              <p class="text__grey">OUR TRUSTED CUSTOMERS</p>
+              <div class="landing__customers">
+                <figure class="landing__customer--wrapper">
+                  <img
+                    src="./assets/customers.png"
+                    alt=""
+                    class="landing__customer--img"
+                  />
+                </figure>
+              </div>
             </div>
             <figure class="landing__img--wrapper">
               <img
-                src="./assets/undraw_static_website_re_x70h.svg"
+                src="./assets/landing__img.svg"
                 alt=""
                 class="landing__img"
               />
             </figure>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="row features__row">
+          <div class="container features__container">
+            <div class="features__title--container">
+              <h3> <span class="text__purple">FEATURES</span></h3>
+              <h1 class="title features__title">
+                We have Amazing <span class="text__purple">Service.</span>
+              </h1>
+              <p class="grey__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, libero aliquam? Aliquam nostrum Lorem, ipsum.</p>
+            </div>
+            <div class="features__characteristics__container">
+              <div class="features__characteristic">
+                <h4 class="features__characteristic--title">Secure</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
