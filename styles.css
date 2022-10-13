@@ -1,0 +1,210 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #242424;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row{
+    max-width: 1800px;
+    padding: 0 20px;
+    display: flex;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 44px;
+    text-align: center;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    color: #414141;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.text__purple{
+    color: rgb(99, 35, 182)
+}
+
+/* NAV */
+
+nav{
+    height: 6vh;
+}
+
+.nav__row{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.nav__icon{
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 4px 10px;
+    background-color: rgb(99, 35, 182);
+    border-radius: 4px;
+    transition: all 300ms ease;
+}
+
+.nav__icon:hover{
+    opacity: 0.9;
+}
+
+.nav__name{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+    transition: all 300ms ease;
+}
+
+.nav__name:hover{
+    color: rgb(99, 35, 182);
+}
+
+.nav__link--list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.nav__link-list-item{
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 300ms ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.nav__link{
+    transition: all 200ms ease;
+}
+
+.nav__link-hover-effect{
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    background-color: rgb(99, 35, 182);
+    transition: all 600ms ease;
+}
+
+.nav__link-list-item:hover .nav__link-hover-effect{
+    width: 100%;
+    left: 0;
+}
+
+.nav__link-list-item:hover .nav__link{
+    color: rgb(99, 35, 182);
+}
+
+.login__link{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 20px;
+}
+
+.nav__link--primary{
+    padding: 8px 28px;
+    margin-left: 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(99, 35, 182);
+    transition: all 300ms ease;
+}
+
+.nav__link--primary:hover{
+    opacity: 0.95;
+    transform: scale(1.07);
+}
+
+/* landing page */
+
+#landing{
+    height: 94vh;
+}
+
+.landing__row{
+    padding: 15px;
+    height: 100%
+}
+
+.landing__container{
+    height: 100%;
+}
+
+.landing__organizer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 32px;
+}
+
+form{
+    margin: 24px 0 0 0 ;
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
+.email{
+    padding: 14px 160px 14px 14px;
+    border-radius: 30px;
+    font-size: 18px;
+    border-color: #2424241e;
+}
+
+.email:hover{
+    border-color: #242424c0;
+}
+
+.email__button{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    padding: 11px 24px;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #6323b6;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+.email__button:hover{
+    background-color: #511c97;
+}
+
+.landing__img--wrapper{
+    display: flex;
+}
+
+.landing__img{
+    width: 100%;
+}
