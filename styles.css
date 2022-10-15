@@ -17,6 +17,7 @@ body {
   padding: 0 20px;
   display: flex;
   margin: 0 auto;
+  height: 100%;
 }
 
 .container {
@@ -358,18 +359,6 @@ h3 {
   font-size: 20px;
 }
 
-.blob__wrapper {
-  opacity: 0.2;
-  width: 200px;
-  bottom: 100px;
-  left: -100px;
-  position: absolute;
-}
-
-.blob {
-  width: 100%;
-}
-
 /*QUALITY*/
 
 #quality {
@@ -443,15 +432,6 @@ h3 {
   width: 100%;
   border-radius: 20px;
 }
-
-.quality__decoration {
-  width: 50px;
-  bottom: -25px;
-  right: -25px;
-  position: absolute; 
-  z-index: 0;
-}
-
 /*STEPS*/
 
 #steps{
@@ -465,6 +445,10 @@ h3 {
   justify-content: start;
   align-items: start;
   margin-left: 40px;
+}
+
+.steps__title{
+  text-align: start;
 }
 
 .step__organizer{
@@ -494,6 +478,46 @@ h3 {
   letter-spacing: 1px;
 }
 
-.step__info{
+.info__text{
   color: #242424a6;
+}
+
+/*VALUES*/
+
+#values{
+  height: 70vh;
+}
+
+.values__organizer{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.values__title--block{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.values__title{
+  text-align: start;
+}
+
+.values__lower--block{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.values__img--wrapper{
+  display: flex;
+  margin: 30px;
+  max-width: 800px;
+}
+
+.values__img{
+  width: 100%;
 }
