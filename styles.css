@@ -19,6 +19,12 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   font-size: 44px;
   text-align: center;
@@ -33,11 +39,6 @@ p {
   line-height: 1.5;
   font-size: 18px;
   text-align: justify;
-}
-
-.container {
-  width: 100%;
-  display: flex;
 }
 
 .text__purple {
@@ -276,7 +277,7 @@ form {
 /* FEATURES */
 
 #features {
-  height: 80vh;
+  height: 70vh;
   animation: right 800ms 500ms backwards;
 }
 
@@ -372,8 +373,9 @@ h3 {
 /*QUALITY*/
 
 #quality {
-  height: 100vh;
+  height: 70vh;
   display: flex;
+  margin: 200px 0;
 }
 
 .quality__row {
@@ -448,4 +450,50 @@ h3 {
   right: -25px;
   position: absolute; 
   z-index: 0;
+}
+
+/*STEPS*/
+
+#steps{
+  height: 70vh;
+  margin: 400px 0 200px;
+}
+
+.steps__organizer{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-left: 40px;
+}
+
+.step__organizer{
+  margin: 32px 0 0 0;
+}
+
+.steps{
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.steps__counter{
+  font-size: 32px;
+  padding: 8px;
+  margin-right: 20px;
+  color: #24242469;
+  font-weight: bold;
+  border: 1px solid #24242469;
+  border-radius: 50%;
+  height: fit-content;
+}
+
+.step__title{
+  margin-bottom: 20px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.step__info{
+  color: #242424a6;
 }
