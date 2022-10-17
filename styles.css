@@ -632,6 +632,8 @@ h3 {
   justify-content: center;
   margin: 40px 30px 20px;
   transition: all 300ms ease;
+  border-radius: 10px;
+box-shadow: 5px 5px 30px;
 }
 
 .pricing__column--highlight{
@@ -773,4 +775,34 @@ h3 {
 .pricing__column:hover{
   scale: 1.05;
   opacity: 0.9;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials__container{
+  display: flex;
+}
+
+.testimonials__organizer{
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__img{
+  width: 100%;
+}
+
+.review__user--container{
+  display: flex;
+  
+}
+
+.review__img--container{
+  max-width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review__img{
+  width: 100%;
 }
