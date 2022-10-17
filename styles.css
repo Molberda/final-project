@@ -529,7 +529,18 @@ h3 {
   margin-left: 12px;
 }
 
-.values__icon--wrapper{
+.values__icon--wrapper-p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #b6236d;
+  border-radius: 50%;
+  background-color: #b6236d70;
+}
+.values__icon--wrapper-a{
   display: flex;
   align-items: center;
   justify-content: center;
