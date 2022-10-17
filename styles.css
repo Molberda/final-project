@@ -583,3 +583,82 @@ h3 {
 .values__img{
   width: 100%;
 }
+
+/* PRICING*/
+
+.pricing__container{
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__columns--container{
+  margin-top: 40px;
+  display: flex;
+}
+
+.pricing__column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__column--price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #242424;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  padding: 20px 90px;
+}
+
+.plan__name{
+  padding: 16px 0;
+  letter-spacing: normal;
+}
+
+.plan__price{
+  padding: 0px 0 16px;
+  font-size: 36px;
+}
+
+.plan__payment{
+  color: #242424b4;
+  letter-spacing: 1.5px;
+}
+
+.pricing__column--info{
+  border-left: 1px solid #242424;
+  border-right: 1px solid #242424;
+  padding: 20px 90px;
+  width: 100%;
+}
+
+.plan__target-audience{
+  letter-spacing: normal;
+}
+
+.plan__characteristics{
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #242424b4;
+}
+
+.pricing__column--buy{
+  border: 1px solid #242424;
+  padding: 20px 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pricing__button{
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 12px 24px;
+}
