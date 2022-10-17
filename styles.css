@@ -46,6 +46,14 @@ p {
   color: rgb(99, 35, 182);
 }
 
+button:hover{
+cursor: pointer;
+}
+
+button:active{
+  transform: translateY(5px);
+}
+
 /*ANIMATIONS*/ 
 
 @keyframes left{
@@ -591,6 +599,26 @@ h3 {
   flex-direction: column;
 }
 
+.pricing__organizer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing__title{
+  margin-bottom: 32px;
+}
+
+.pricing__description{
+  text-align: center;
+  max-width: 460px;
+  font-size: 18px;
+  color: #242424A6;
+  line-height: 1.5;
+}
+
 .pricing__columns--container{
   margin-top: 40px;
   display: flex;
@@ -603,13 +631,25 @@ h3 {
   align-items: center;
   justify-content: center;
   margin: 40px 30px 20px;
+  transition: all 300ms ease;
+}
+
+.pricing__column--highlight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 30px 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 255, 0.637) 0%, rgba(66, 167, 201, 0.841) 100%);
+  border:2px solid rgba(49, 69, 216, 0.497);
+  border-radius: 10px;
 }
 
 .pricing__column--price{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #2424242d;
+  border: 1px solid #2424242d;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
@@ -687,6 +727,7 @@ h3 {
   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); 
   border: none;
   width: 100%;
+  transition: all 300ms ease;
 }
 
 .pricing__button2{
@@ -697,4 +738,39 @@ h3 {
   background: linear-gradient(115deg, rgb(178, 56, 127) 0%, rgb(206, 88, 157) 100%); 
   border: none;
   width: 100%;
+  transition: all 300ms ease;
+}
+
+.pricing__button1{
+  border-radius: 30px;
+  padding: 12px 50px;
+  font-weight: bold;
+  color: rgb(23, 54, 156);
+  background-color: white; 
+  border: none;
+  width: 100%;
+  transition: all 300ms ease;
+}
+
+.pricing__button:hover,.pricing__button1:hover, .pricing__button2:hover{
+  scale: 1.05;
+  opacity: 0.8;
+}
+
+.pricing__column--info-highlight, .pricing__column--price-highlight{
+  filter: invert(1);
+}
+
+.pricing__column--info-highlight, .pricing__column--price-highlight, .pricing__column--buy-highlight{
+  border: none;
+}
+
+.pricing__column--info-highlight{
+  border-top: 1px solid rgba(0, 0, 0, 0.34);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+}
+
+.pricing__column:hover{
+  scale: 1.05;
+  opacity: 0.9;
 }
