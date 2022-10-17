@@ -507,6 +507,10 @@ h3 {
   text-align: start;
 }
 
+.values__des{
+  margin-top: 30px;
+}
+
 .values__lower--block{
   display: flex;
   margin-bottom: 20px;
@@ -558,6 +562,16 @@ h3 {
 
 .fa-briefcase{
   color: #86154e;
+}
+
+.affordable__description{
+  color: #242424A6;
+}
+
+.values__button{
+  margin-top: 24px;
+  font-size: 14px;
+  padding: 8px 18px;
 }
 
 .values__img--wrapper{
