@@ -594,6 +594,7 @@ h3 {
 .pricing__columns--container{
   margin-top: 40px;
   display: flex;
+  justify-content: center;
 }
 
 .pricing__column{
@@ -601,17 +602,38 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 40px 30px 20px;
 }
 
 .pricing__column--price{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #242424;
+  border: 2px solid #2424242d;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
   padding: 20px 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.price__decor{
+  position: absolute;
+  top: -5px;
+  width: 95%;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); 
+}
+
+.price__decor2{
+  position: absolute;
+  top: -5px;
+  width: 95%;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(115deg, rgb(178, 56, 127) 0%, rgb(206, 88, 157) 100%); 
 }
 
 .plan__name{
@@ -630,8 +652,8 @@ h3 {
 }
 
 .pricing__column--info{
-  border-left: 1px solid #242424;
-  border-right: 1px solid #242424;
+  border-left: 1px solid #2424242d;
+  border-right: 1px solid #2424242d;
   padding: 20px 90px;
   width: 100%;
 }
@@ -648,8 +670,8 @@ h3 {
 }
 
 .pricing__column--buy{
-  border: 1px solid #242424;
-  padding: 20px 90px;
+  border: 1px solid #2424242d;
+  padding: 20px 40px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -658,7 +680,21 @@ h3 {
 }
 
 .pricing__button{
-  border: 1px solid black;
   border-radius: 30px;
-  padding: 12px 24px;
+  padding: 12px 50px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); 
+  border: none;
+  width: 100%;
+}
+
+.pricing__button2{
+  border-radius: 30px;
+  padding: 12px 50px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(115deg, rgb(178, 56, 127) 0%, rgb(206, 88, 157) 100%); 
+  border: none;
+  width: 100%;
 }
