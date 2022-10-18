@@ -286,8 +286,9 @@ form {
 /* FEATURES */
 
 #features {
-  height: 70vh;
+  padding: 00px 0;
   animation: right 800ms 500ms backwards;
+  height: fit-content;
 }
 
 .features__row {
@@ -299,7 +300,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 600px;
+  height: fit-content;
 }
 
 .features__title--container {
@@ -370,9 +371,8 @@ h3 {
 /*QUALITY*/
 
 #quality {
-  height: 70vh;
   display: flex;
-  margin: 200px 0;
+  padding: 00px 0;
 }
 
 .quality__row {
@@ -443,8 +443,7 @@ h3 {
 /*STEPS*/
 
 #steps {
-  height: 70vh;
-  margin: 400px 0 200px;
+padding: 00px 0;
 }
 
 .steps__organizer {
@@ -493,7 +492,7 @@ h3 {
 /*VALUES*/
 
 #values {
-  height: 70vh;
+padding: 00px 0;
 }
 
 .values__organizer {
@@ -597,6 +596,7 @@ h3 {
 .pricing__container {
   display: flex;
   flex-direction: column;
+  padding: 00px 0;
 }
 
 .pricing__organizer {
@@ -806,7 +806,7 @@ h3 {
 /*TESTIMONIALS*/
 
 #testimonials {
-  height: 70vh;
+padding: 00px 0;
 }
 
 .testimonials__container {
@@ -941,6 +941,10 @@ h3 {
 }
 
 /*FAQS*/
+
+#faqs{
+  padding: 00px 0;
+}
 
 .faqs__container {
   flex-direction: column;
@@ -1199,4 +1203,46 @@ opacity: 0.7;
 .fa-youtube {
   color: black;
   font-size: 12px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 1200px){
+  
+  #features, #quality, #steps, #values, #pricing, #testimonials, #faqs{
+     padding: 125px 0;
+   }
+   
+}
+
+@media (max-width: 1200px){
+  .row{
+    max-width: 1000px;
+  }
+  
+  #features, #quality, #steps, #values, #pricing, #testimonials, #faqs{
+     padding: 125px 0;
+   }
+
+  .nav__row{
+    max-width: 1150px;
+  }
+
+  .landing__img--wrapper{
+    padding-top: 170px;
+  }
+
+  .features__title--container{
+    margin-bottom: 0;
+  }
+
+  .description__text{
+    font-size: 16px;
+  }
+
+  .quality__organizer{
+    min-width: 430px;
+    max-width: 480px;
+  }
+
 }
