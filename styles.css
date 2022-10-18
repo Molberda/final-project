@@ -848,6 +848,7 @@ box-shadow: 5px 5px 30px;
   border: none;
   height: 50px;
   width: 50px;
+  transition: all 300ms ease;
 }
 
 .fa-arrow-right{
@@ -872,6 +873,9 @@ box-shadow: 5px 5px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.arrow:hover{
+  scale: 1.1;
 }
 
 .arrows{
