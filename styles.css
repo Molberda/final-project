@@ -1078,6 +1078,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: rgba(67, 35, 182, 0.911);
+  max-width: none;
 }
 
 .footer__container {
@@ -1104,11 +1105,34 @@ footer {
   font-size: 14px;
 }
 
+.footer__list--item{
+  position: relative;
+  width: fit-content;
+  margin-bottom: 6px;
+}
+
 .footer__category--subtitle {
   color: white;
   font-size: 12px;
-  margin-bottom: 10px;
 }
+
+.footer__link--hover-effect{
+  width: 0%;
+  height: 3px;
+  border-radius: 3px;
+  bottom: -3px;
+  position: absolute;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  transition: all 1000ms ease;
+}
+
+
+.footer__list--item:hover .footer__link--hover-effect{
+  width: 100%;
+  left: 0;
+}
+
 
 .footer__divider {
   width: 100%;
@@ -1121,6 +1145,37 @@ footer {
 .footer__organizer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo--container{
+  height: 100%;
+}
+
+.footer__logo{
+  color: rgba(67, 35, 182, 0.911);
+  background-color: white;
+  font-size: 22px;
+}
+
+.footer__name{
+  color: white;
+  font-size: 18px;
+}
+
+.footer__logo:hover{
+  scale: 1.1;
+}
+
+.footer__name:hover{
+color: white;
+opacity: 0.7;
+}
+
+.footer__copy{
+  color: rgba(255, 255, 255, 0.616);
+  font-size: 10px;
+  padding-top: 16px;
 }
 
 .footer__links {
