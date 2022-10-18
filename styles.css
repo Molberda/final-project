@@ -446,6 +446,16 @@ h3 {
 padding: 00px 0;
 }
 
+.steps__img--wrapper{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.steps__img{
+  width: 100%;
+}
+
 .steps__organizer {
   display: flex;
   flex-direction: column;
@@ -1210,9 +1220,9 @@ opacity: 0.7;
 @media (min-width: 1200px){
   
   #features, #quality, #steps, #values, #pricing, #testimonials, #faqs{
-     padding: 125px 0;
+     padding: 150px 0;
    }
-   
+
 }
 
 @media (max-width: 1200px){
@@ -1242,6 +1252,14 @@ opacity: 0.7;
 
   .quality__organizer{
     min-width: 430px;
+    max-width: 480px;
+  }
+
+  .quality__subtitle{
+    font-size: 18px;
+  }
+
+  .steps__img--wrapper{
     max-width: 480px;
   }
 
