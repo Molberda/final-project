@@ -899,7 +899,7 @@ h3 {
 }
 
 .arrow__divider {
-  width: 5px;
+  width: 3px;
   height: 60px;
   background-color: #2424243d;
   border-radius: 5px;
@@ -1087,19 +1087,44 @@ h3 {
 /*FOOTER*/
 
 footer {
-  height: 30vh;
+  height: 40vh;
   margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__deco {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgba(67, 35, 182, 0.493);
+  position: absolute;
+ top: -130px;
+  left: -40px;
+  z-index: 0;
+}
+
+.footer__deco1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgba(67, 35, 182, 0.493);
+  position: absolute;
+bottom: -130px;
+  right: -40px;
+  z-index: 0;
 }
 
 .footer__row {
   display: flex;
   justify-content: center;
   background-color: rgba(67, 35, 182, 0.911);
-  max-width: none;
+  max-width: none !important;
 }
 
 .footer__container {
-  width: 70%;
+  width: 100%;
+  margin: 0 120px;
   display: flex;
   flex-direction: column;
 }
@@ -1114,6 +1139,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index: 1;
 }
 
 .footer__category--title {
@@ -1195,6 +1221,7 @@ footer {
 
 .footer__links {
   display: flex;
+  z-index: 1;
 }
 
 .footer__link {
@@ -1299,11 +1326,52 @@ footer {
   margin: 20px;
 }
 
-.testimonials__subtitle{
-  font-size: 16px;
-}
-
 .testimonials__review{
   font-size: 14px;
 }
+
+.review__img--container{
+  width: 55px;
+  height: 55px;
+}
+
+.review__name{
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+.user__description{
+  font-size: 14px;
+}
+
+.arrow{
+  height: 40px;
+  width: 40px;
+}
+
+.arrow__divider{
+  height: 40px;
+}
+
+.grey__subtitle{
+  font-size: 16px;
+}
+
+.question{
+  font-size: 16px;
+}
+
+.final__container{
+  justify-content: space-between;
+}
+
+.final__title{
+  font-size: 22px;
+}
+
+.footer__container{
+  width: 100%;
+  margin: 0 60px;
+}
+
 }
