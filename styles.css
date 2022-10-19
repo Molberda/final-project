@@ -1288,10 +1288,6 @@ footer {
     font-size: 18px;
   }
 
-  .steps__img--wrapper {
-    max-width: 480px;
-  }
-
   .steps__counter {
     font-size: 28px;
   }
@@ -1367,8 +1363,42 @@ footer {
 }
 
 @media (max-width: 1085px) {
+
+  .landing__title{
+    text-align: center;
+  }
+
+  .text{
+    text-align: center;
+  }
+
+  #landing{
+    height: fit-content;
+  }
+
   .landing__container {
     flex-wrap: wrap;
+  }
+
+  .landing__organizer{
+    align-items: center;
+  }
+  
+  form{
+    margin: 0;
+  }
+
+  .text__grey{
+    margin: 24px 0 12px;
+  }
+
+  .landing__customers{
+    justify-content: center;
+  }
+
+  .landing__img--wrapper{
+    margin: 60px 0px;
+    width: 600px;
   }
 
   .features__characteristics__container {
@@ -1387,3 +1417,128 @@ footer {
     margin: 20px 120px;
   }
 }
+
+@media (max-width: 992px){
+
+  h3{
+    padding: 0%;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .grey__subtitle{
+    text-align: center;
+    padding: 0 0 24px;
+  }
+
+  .quality__container{
+    flex-wrap: wrap;
+  }
+
+  .quality__organizer{
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .quality__img--wrapper{
+    width: 600px;
+  }
+
+  .steps__container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .steps__organizer{
+    align-items: center;
+    margin: 0 0 32px;
+  }
+
+  .steps__counter{
+    font-size: 22px;
+  }
+
+  .step__title{
+    font-size: 22px;
+    margin: 8px 0;
+  }
+
+  .info__text{
+    font-size: 16px;
+  }
+
+  .steps__img--wrapper{
+    width: 600px;
+  }
+
+  .values__container{
+    flex-wrap: wrap;
+  }
+
+  .values__organizer{
+    align-items: center;
+  }
+
+  .values__title--block{
+    align-items: center;
+  }
+
+  .values__affordable--block{
+    margin: 16px 8px 0;
+  }
+
+  .icon__title{
+    justify-content: center;
+  }
+  
+  .affordable__description{
+    text-align: center;
+  }
+
+  .values__button{
+    margin: 0;
+  }
+
+  .values__img--wrapper{
+    width: 600px;
+    margin-top: 32px 0 0;
+  }
+
+  .testimonials__container{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .testimonials__organizer{
+    align-items: center;
+    padding: 0;
+    width: 500px;
+  }
+
+  .testimonials__title{
+    padding: 20px 0;
+  }
+
+  .testimonials__subtitle{
+    padding: 0;
+  }
+
+  .testimonials__rating--title{
+    padding: 0 0 20px;
+  }
+
+  .testimonials__review{
+    text-align: center;
+  }
+
+  .testimonials__img--wrapper{
+    width: 600px;
+    margin: 32px 0 0;
+  }
+
+}
+
