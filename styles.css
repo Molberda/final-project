@@ -443,16 +443,16 @@ h3 {
 /*STEPS*/
 
 #steps {
-padding: 00px 0;
+  padding: 00px 0;
 }
 
-.steps__img--wrapper{
-display: flex;
-align-items: center;
-justify-content: center;
+.steps__img--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.steps__img{
+.steps__img {
   width: 100%;
 }
 
@@ -492,7 +492,6 @@ justify-content: center;
 .step__title {
   margin-bottom: 20px;
   font-size: 26px;
-  letter-spacing: 1px;
 }
 
 .info__text {
@@ -502,7 +501,7 @@ justify-content: center;
 /*VALUES*/
 
 #values {
-padding: 00px 0;
+  padding: 00px 0;
 }
 
 .values__organizer {
@@ -602,6 +601,11 @@ padding: 00px 0;
 }
 
 /* PRICING*/
+
+.pricing__row {
+  justify-content: center;
+  align-items: center;
+}
 
 .pricing__container {
   display: flex;
@@ -816,7 +820,7 @@ padding: 00px 0;
 /*TESTIMONIALS*/
 
 #testimonials {
-padding: 00px 0;
+  padding: 00px 0;
 }
 
 .testimonials__container {
@@ -853,12 +857,11 @@ padding: 00px 0;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 20px;
+  display: flex;
 }
 
 .review__img {
   width: 100%;
-  scale: 1.13;
-  transform: translateY(5px);
 }
 
 .review__username {
@@ -952,7 +955,7 @@ padding: 00px 0;
 
 /*FAQS*/
 
-#faqs{
+#faqs {
   padding: 00px 0;
 }
 
@@ -1119,7 +1122,7 @@ footer {
   font-size: 14px;
 }
 
-.footer__list--item{
+.footer__list--item {
   position: relative;
   width: fit-content;
   margin-bottom: 6px;
@@ -1130,7 +1133,7 @@ footer {
   font-size: 12px;
 }
 
-.footer__link--hover-effect{
+.footer__link--hover-effect {
   width: 0%;
   height: 3px;
   border-radius: 3px;
@@ -1141,12 +1144,10 @@ footer {
   transition: all 1000ms ease;
 }
 
-
-.footer__list--item:hover .footer__link--hover-effect{
+.footer__list--item:hover .footer__link--hover-effect {
   width: 100%;
   left: 0;
 }
-
 
 .footer__divider {
   width: 100%;
@@ -1162,31 +1163,31 @@ footer {
   align-items: center;
 }
 
-.footer__logo--container{
+.footer__logo--container {
   height: 100%;
 }
 
-.footer__logo{
+.footer__logo {
   color: rgba(67, 35, 182, 0.911);
   background-color: white;
   font-size: 22px;
 }
 
-.footer__name{
+.footer__name {
   color: white;
   font-size: 18px;
 }
 
-.footer__logo:hover{
+.footer__logo:hover {
   scale: 1.1;
 }
 
-.footer__name:hover{
-color: white;
-opacity: 0.7;
+.footer__name:hover {
+  color: white;
+  opacity: 0.7;
 }
 
-.footer__copy{
+.footer__copy {
   color: rgba(255, 255, 255, 0.616);
   font-size: 10px;
   padding-top: 16px;
@@ -1217,50 +1218,92 @@ opacity: 0.7;
 
 /*MEDIA QUERIES*/
 
-@media (min-width: 1200px){
-  
-  #features, #quality, #steps, #values, #pricing, #testimonials, #faqs{
-     padding: 150px 0;
-   }
-
+@media (min-width: 1200px) {
+  #features,
+  #quality,
+  #steps,
+  #values,
+  #pricing,
+  #testimonials,
+  #faqs {
+    padding: 150px 0;
+  }
 }
 
-@media (max-width: 1200px){
-  .row{
+@media (max-width: 1200px) {
+  .row {
     max-width: 1000px;
   }
-  
-  #features, #quality, #steps, #values, #pricing, #testimonials, #faqs{
-     padding: 125px 0;
-   }
 
-  .nav__row{
+  #features,
+  #quality,
+  #steps,
+  #values,
+  #pricing,
+  #testimonials,
+  #faqs {
+    padding: 125px 0;
+  }
+
+  .nav__row {
     max-width: 1150px;
   }
 
-  .landing__img--wrapper{
+  .landing__img--wrapper {
     padding-top: 170px;
   }
 
-  .features__title--container{
+  .features__title--container {
     margin-bottom: 0;
   }
 
-  .description__text{
+  .description__text {
     font-size: 16px;
   }
 
-  .quality__organizer{
+  .quality__organizer {
     min-width: 430px;
     max-width: 480px;
   }
 
-  .quality__subtitle{
+  .quality__subtitle {
     font-size: 18px;
   }
 
-  .steps__img--wrapper{
+  .steps__img--wrapper {
     max-width: 480px;
   }
 
+  .steps__counter {
+    font-size: 28px;
+  }
+
+  .values__organizer {
+    max-width: 400px;
+  }
+
+  .values__des {
+    font-size: 16px;
+  }
+
+  .affordable__description {
+    font-size: 14px;
+  }
+
+  .pricing__row {
+    width: fit-content;
+    max-width: none;
+  }
+
+.pricing__column{
+  margin: 20px;
+}
+
+.testimonials__subtitle{
+  font-size: 16px;
+}
+
+.testimonials__review{
+  font-size: 14px;
+}
 }
