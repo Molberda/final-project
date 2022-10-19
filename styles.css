@@ -1441,6 +1441,11 @@ footer {
 }
 
 @media (max-width: 992px) {
+
+  .nav__link--list {
+    display: none;
+  }
+
   h3 {
     padding: 0%;
   }
@@ -1563,9 +1568,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav__link--list {
-    display: none;
-  }
 
   .features__characteristics__container {
     margin: 0;
