@@ -720,12 +720,14 @@ h3 {
 .pricing__column--info {
   border-left: 1px solid #2424242d;
   border-right: 1px solid #2424242d;
-  padding: 20px 90px;
+  padding: 20px 30px;
   width: 100%;
 }
 
 .plan__target-audience {
   letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .plan__characteristics {
