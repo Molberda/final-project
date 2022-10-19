@@ -1568,4 +1568,17 @@ footer {
   .landing__text{
     font-size: 16px;
   }
+
+  .features__characteristics__container{
+    margin: 0;
+  }
+
+  .features__characteristic{
+    width: 48%;
+    margin: 0 8px 0 0;
+  }
+
+  .description__text{
+    text-align: start;
+  }
 }
