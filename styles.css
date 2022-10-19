@@ -1551,3 +1551,21 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 576px) {
+  .title{
+    font-size: 32px;
+  }
+
+  .grey__subtitle{
+    font-size: 14px;
+  }
+
+  .landing__organizer{
+    width: 100%;
+  }
+
+  .landing__text{
+    font-size: 16px;
+  }
+}
