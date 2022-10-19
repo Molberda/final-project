@@ -182,21 +182,18 @@ button:active {
 /* landing page */
 
 .landing__row {
-  padding: 15px 0;
-  height: fit-content;
+  padding: 0 15px 15px;
 }
 
 .landing__container {
   height: 100%;
   align-items: start;
-  padding-top: 40px;
 }
 
 .landing__organizer {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  padding: 70px 32px;
+  justify-content: center;
   height: 100%;
   width: 50%;
 }
@@ -271,16 +268,12 @@ form {
 
 .landing__img--wrapper {
   display: flex;
-  align-items: start;
   margin-left: 20px;
-  padding-top: 50px;
   height: 100%;
-  width: max-content;
 }
 
 .landing__img {
   width: 100%;
-  height: fit-content;
 }
 
 /* FEATURES */
@@ -1089,6 +1082,8 @@ h3 {
 footer {
   height: 40vh;
   margin-top: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -1099,7 +1094,7 @@ footer {
   border-radius: 50%;
   background-color: rgba(67, 35, 182, 0.493);
   position: absolute;
- top: -130px;
+  top: -130px;
   left: -40px;
   z-index: 0;
 }
@@ -1110,7 +1105,7 @@ footer {
   border-radius: 50%;
   background-color: rgba(67, 35, 182, 0.493);
   position: absolute;
-bottom: -130px;
+  bottom: -130px;
   right: -40px;
   z-index: 0;
 }
@@ -1276,10 +1271,6 @@ bottom: -130px;
     max-width: 1150px;
   }
 
-  .landing__img--wrapper {
-    padding-top: 170px;
-  }
-
   .features__title--container {
     margin-bottom: 0;
   }
@@ -1322,56 +1313,77 @@ bottom: -130px;
     max-width: none;
   }
 
-.pricing__column{
-  margin: 20px;
+  .pricing__column {
+    margin: 20px;
+  }
+
+  .testimonials__review {
+    font-size: 14px;
+  }
+
+  .review__img--container {
+    width: 55px;
+    height: 55px;
+  }
+
+  .review__name {
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+
+  .user__description {
+    font-size: 14px;
+  }
+
+  .arrow {
+    height: 40px;
+    width: 40px;
+  }
+
+  .arrow__divider {
+    height: 40px;
+  }
+
+  .grey__subtitle {
+    font-size: 16px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .final__container {
+    justify-content: space-between;
+  }
+
+  .final__title {
+    font-size: 22px;
+  }
+
+  .footer__container {
+    width: 100%;
+    margin: 0 60px;
+  }
 }
 
-.testimonials__review{
-  font-size: 14px;
-}
+@media (max-width: 1085px) {
+  .landing__container {
+    flex-wrap: wrap;
+  }
 
-.review__img--container{
-  width: 55px;
-  height: 55px;
-}
+  .features__characteristics__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 56px;
+  }
+  .features__characteristic {
+    margin: 0 60px;
+  }
 
-.review__name{
-  font-size: 16px;
-  letter-spacing: normal;
-}
-
-.user__description{
-  font-size: 14px;
-}
-
-.arrow{
-  height: 40px;
-  width: 40px;
-}
-
-.arrow__divider{
-  height: 40px;
-}
-
-.grey__subtitle{
-  font-size: 16px;
-}
-
-.question{
-  font-size: 16px;
-}
-
-.final__container{
-  justify-content: space-between;
-}
-
-.final__title{
-  font-size: 22px;
-}
-
-.footer__container{
-  width: 100%;
-  margin: 0 60px;
-}
-
+  .pricing__columns--container {
+    flex-wrap: wrap;
+  }
+  .pricing__column {
+    margin: 20px 120px;
+  }
 }
