@@ -1550,6 +1550,10 @@ footer {
   .nav__link--list{
     display: none;
   }
+  
+  .features__characteristics__container{
+    margin: 0;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1574,11 +1578,26 @@ footer {
   }
 
   .features__characteristic{
-    width: 48%;
-    margin: 0 8px 0 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 30px;
+  }
+
+  .features__icon--wrapper{
+    padding: 8px;
+  }
+
+  .feature__icon{
+    width: 20px;
+  }
+
+  .features__characteristic--title{
+    font-size: 18px;
+    margin: 8px 0;
   }
 
   .description__text{
     text-align: start;
+    font-size: 12px;
   }
 }
