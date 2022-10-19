@@ -952,6 +952,10 @@ h3 {
   padding: 00px 0;
 }
 
+.faqs__row{
+  max-width: 1200px;
+}
+
 .faqs__container {
   flex-direction: column;
   align-items: center;
@@ -968,7 +972,7 @@ h3 {
 }
 
 .faq__question {
-  width: 800px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1542,3 +1546,8 @@ footer {
 
 }
 
+@media (max-width: 768px){
+  .nav__link--list{
+    display: none;
+  }
+}
